@@ -1,0 +1,8 @@
+class Solution:
+    def trimMean(self, arr: List[int]) -> float:
+        a = []
+        if len(arr) >= 2:
+            arr.sort()
+            socanchuyen = int(len(arr) * 0.05)
+            a = arr[socanchuyen:len(arr)-socanchuyen]
+            return sum(a)/len(a)
