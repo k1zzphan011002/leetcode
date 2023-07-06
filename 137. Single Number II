@@ -1,0 +1,5 @@
+class Solution:
+    def singleNumber(self, nums: List[int]) -> int:
+        estimated_sum = sum(set(nums)) * 3
+        actual_sum = sum(nums)
+        return (estimated_sum - actual_sum) // 2
